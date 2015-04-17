@@ -1,0 +1,7 @@
+Outline: 
+
+
+What is RxJava?
+
+Observer Pattern 
+Subscriber pattern
