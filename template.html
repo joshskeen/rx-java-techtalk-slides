@@ -1,11 +1,3 @@
-<!--
-Google IO 2012/2013 HTML5 Slide Template
-
-Authors: Eric Bidelman <ebidel@gmail.com>
-         Luke Mahé <lukem@google.com>
-
-URL: https://code.google.com/p/io-2012-slides
--->
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,15 +17,8 @@ URL: https://code.google.com/p/io-2012-slides
 <body style="opacity: 0">
 
 <slides class="layout-widescreen">
-
-  <slide class="logoslide nobackground">
-    <article class="flexbox vcenter">
-      <span><img src="images/google_developers_logo.png"></span>
-    </article>
-  </slide>
-
   <slide class="title-slide segue nobackground">
-    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <aside class="gdbar"><img src="images/rxlogo.png"></aside>
     <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
     <hgroup class="auto-fadein">
       <h1 data-config-title><!-- populated from slide_config.json --></h1>
@@ -44,369 +29,679 @@ URL: https://code.google.com/p/io-2012-slides
 
   <slide>
     <hgroup>
-      <h2>Slide with Bullets</h2>
+      <h2>RxJava?</h2>
+    </hgroup>
+    <article>
+      <p>RxJava is "A <b>Functional Reactive Programming</b> library from Netflix for composing asynchronous and event-based programs by using observable sequences"
+      </article>
+      <br />
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>RxJava?</h2>
+    </hgroup>
+    <article>
+      <p>RxJava is "A <b>Functional Reactive Programming</b> library from Netflix for composing asynchronous and event-based programs by using observable sequences"
+      </article>
+      <br />
+      <ul>
+        <li>Rx Framework began at Microsoft (.net Reactive Extensions, Erik Meijer)</li>
+        <li>ports exist in numerous languages (javascript, ruby, c++, java, etc)</li>
+      </ul>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>RxJava?</h2>
+    </hgroup>
+    <article>
+      <p>RxJava is "A <b>Functional Reactive Programming</b> library from Netflix for composing asynchronous and event-based programs by using observable sequences"
+      </article>
+      <br />
+      <ul>
+        <li>Rx Framework began at Microsoft (.net Reactive Extensions, Erik Meijer)</li>
+        <li>ports exist in numerous languages (javascript, ruby, c++, java, etc)</li>
+        <li>probably involves a Monad</li>
+      </ul>
+      <img src="images/monad.gif" width="40%"/>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Functional Reactive Programming?</h2>
     </hgroup>
     <article>
       <ul>
-        <li>Titles are formatted as Open Sans with bold applied and font size is set at 45</li>
-        <li>Title capitalization is title case
-          <ul>
-            <li>Subtitle capitalization is title case</li>
-          </ul>
-        </li>
-        <li>Subtitle capitalization is title case</li>
-        <li>Titles and subtitles should never have a period at the end</li>
-      </ul>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide with Bullets that Build</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article>
-      <p>A list where items build:</p>
-      <ul class="build">
-        <li>Pressing 'h' highlights code snippets</li>
-        <li>Pressing 'p' toggles speaker notes (if they're on the current slide)</li>
-        <li>Pressing 'f' toggles fullscreen viewing</li>
-        <li>Pressing 'w' toggles widescreen</li>
-        <li>Pressing 'o' toggles overview mode</li>
-        <li>Pressing 'ESC' toggles off these goodies</li>
-      </ul>
-      <p>Another list, but items fade as they build:</p>
-      <ul class="build fade">
-        <li>Hover over me!</li>
-        <li>Hover over me!</li>
-        <li>Hover over me!</li>
-      </ul>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide with (Smaller Font)</h2>
-    </hgroup>
-    <article class="smaller">
+      <li><h2>Reactive?</h2>
       <ul>
-        <li>All <a href="http://google.com">links</a> open in new tabs.</li>
-        <li>To change that this, add <code>target="_self"</code> to the link.</li>
+        <li>programming with asynchronous data streams</li>
+      </ul>
+      <br />
+    </li>
+    <li>
+      <h2>Functional?</h2>
+      <ul>
+        <li>a really nice collection of methods for combining, creating and transforming those streams</li>
+      </ul>
+    </li>
+
+    </ul>
+    </article>
+  </slide>
+
+   <slide>
+    <hgroup>
+      <h2>Functional Reactive Programming?</h2>
+    </hgroup>
+    <article>
+      <ul>
+      <li><h2>Reactive?</h2>
+      <ul>
+        <li>programming with asynchronous data streams</li>
+      </ul>
+      <br />
+    </li>
+    <li>
+      <h2>Functional?</h2>
+      <ul>
+        <li>a really nice collection of methods for combining, creating and transforming those streams</li>
+      </ul>
+    </li>
+
+    </ul>
+     <p>"functional reactive programming" may not be the Academically correct terminology for what Rx is...</p>
+    </article>
+  </slide>
+
+   <slide>
+    <hgroup>
+      <h2>Benefits</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li><b>makes concurrent programming much more simple</b></li>
+        <li>simplifies complicated imperative logic</li>
+        <li><b>composition, with functions</b></li>
+        <li>asynchronous, but client can change at any time without redesigning program</li>
+        <li>encourages programs without heavy reliance on state (bad!)</li>
+        <li>same concepts are available in other languages - portable DSL</li>
+        <li><b>concise, elegant style!</b></li>
       </ul>
     </article>
   </slide>
-
-  <slide hidden>
-    Hidden slides are left out of the presentation.
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Code Slide (with Subtitle Placeholder)</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article>
-      <p>Press 'h' to highlight important sections of code (wrapped in <code>&lt;b&gt;</code>).</p>
-      <pre class="prettyprint" data-lang="javascript">
-&lt;script type='text/javascript'&gt;
-  // Say hello world until the user starts questioning
-  // the meaningfulness of their existence.
-  function helloWorld(world) {
-    <b>for (var i = 42; --i &gt;= 0;) {
-      alert('Hello ' + String(world));
-    }</b>
-  }
-&lt;/script&gt;
-</pre>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Code Slide (Smaller Font)</h2>
-    </hgroup>
-    <article class="smaller">
-      <pre class="prettyprint" data-lang="javascript">
-// Say hello world until the user starts questioning
-// the meaningfulness of their existence.
-function helloWorld(world) {
-  for (var i = 42; --i &gt;= 0;) {
-    alert('Hello ' + String(world));
-  }
-}
-</pre>
-<pre class="prettyprint" data-lang="css">
-&lt;style&gt;
-  p { color: pink }
-  b { color: blue }
-&lt;/style&gt;
-</pre>
-<pre class="prettyprint" data-lang="html">
-&lt;!DOCTYPE html>
-&lt;html>
-&lt;head>
-  &lt;title>My Awesome Page&lt;/title>
-&lt;/head>
-&lt;body>
-  &lt;p&gt;Hello world&lt;/p&gt;
-&lt;body>
-&lt;/html>
-</pre>
-    </article>
-  </slide>
-
-  <slide>
-    <aside class="note">
-      <section>
-        <ul>
-          <li>Point I wanted to make #1</li>
-          <li>Point I wanted to make #2</li>
-          <li>Point I wanted to make #3</li>
-          <li>Example <a href="#">link</a> in notes.</li>
-        </ul>
-        <p><b>Remember to say this tag line!</b></p>
-      </section>
-    </aside>
-    <hgroup>
-      <h2>Slide with Speaker Notes</h2>
-    </hgroup>
-    <article>
-      <p>Press 'p' to toggle speaker notes.</p>
-    </article>
-  </slide>
-
-  <slide>
-    <aside class="note">
-      <section>
-        <ul>
-          <li>See this amazing link: <a href="http://www.google.com">link</a>.</li>
-        </ul>
-        <p><b>Remember to say this tag line!</b></p>
-      </section>
-    </aside>
-    <hgroup>
-      <h2>Presenter Mode</h2>
-    </hgroup>
-    <article>
-      <p>Add <code><a href="?presentme=true" target="_self">?presentme=true</a></code> to the URL to enabled presenter mode.
-      This setting is sticky, meaning refreshing the page will persist presenter
-      mode.</p>
-      <p>Hit <code><a href="?presentme=false" target="_self">?presentme=false</a></code> to disable presenter mode.</p>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide with Image</h2>
-    </hgroup>
-    <article>
-      <img src="images/chart.png" class="reflect" alt="Description" title="Description">
-      <footer class="source">source: place source info here</footer>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide with Image (Centered horz/vert)</h2>
-    </hgroup>
-    <article class="flexbox vcenter">
-      <img src="images/barchart.png" alt="Description" title="Description">
-      <footer class="source">source: place source info here</footer>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Table Option A</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article>
-      <table>
-        <tr>
-          <th></th><th>Column 1</th><th>Column 2</th><th>Column 3</th><th>Column 4</th>
-        </tr>
-        <tr>
-          <td>Row 1</td><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 2</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 3</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 4</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 5</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Table Option A (Smaller Text)</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article class="smaller">
-      <table>
-        <tr>
-          <th></th><th>Column 1</th><th>Column 2</th><th>Column 3</th><th>Column 4</th>
-        </tr>
-        <tr>
-          <td>Row 1</td><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 2</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 3</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 4</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <td>Row 5</td><td>placeholder</td><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Table Option B</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-    <article>
-      <table class="rows">
-        <tr>
-          <th>Header 1</th><td>placeholder</td><td class="highlight">placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 2</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 3</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 4</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-        <tr>
-          <th>Header 5</th><td>placeholder</td><td>placeholder</td><td>placeholder</td>
-        </tr>
-      </table>
-    </article>
-  </slide>
-
-  <slide>
-    <hgroup>
-      <h2>Slide Styles</h2>
-    </hgroup>
-    <article class="smaller">
-      <div class="columns-2">
-        <ul>
-          <li class="red">class="red"</li>
-          <li class="red2">class="red2"</li>
-          <li class="red3">class="red3"</li>
-          <li class="blue">class="blue"</li>
-          <li class="blue2">class="blue2"</li>
-          <li class="blue3">class="blue3"</li>
-          <li class="green">class="green"</li>
-          <li class="green2">class="green2"</li>
-        </ul>
-        <ul>
-          <li class="green3">class="green3"</li>
-          <li class="yellow">class="yellow"</li>
-          <li class="yellow2">class="yellow2"</li>
-          <li class="yellow3">class="yellow3"</li>
-          <li class="gray">class="gray"</li>
-          <li class="gray2">class="gray2"</li>
-          <li class="gray3">class="gray3"</li>
-          <li class="gray4">class="gray4"</li>
-        </ul>
-      </div>
-      <div class="centered" style="margin-top:2em">
-        I am centered text with a <button>Button</button> and <button disabled>Disabled</button> button.
-      </div>
-    </article>
-  </slide>
-
-  <slide class="segue dark nobackground">
-    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
-    <hgroup class="auto-fadein">
-      <h2>Segue Slide</h2>
-      <h3>Subtitle Placeholder</h3>
-    </hgroup>
-  </slide>
-
-  <slide class="fill nobackground" style="background-image: url(images/sky.jpg)">
-    <hgroup>
-      <h2 class="white">Full Image (with Optional Header)</h2>
-    </hgroup>
-    <footer class="source white">www.flickr.com/photos/25797459@N06/5438799763/</footer>
-  </slide>
-
-  <slide class="segue dark quote nobackground">
-    <aside class="gdbar right bottom"><img src="images/google_developers_icon_128.png"></aside>
+    <slide class="segue dark quote nobackground">
     <article class="flexbox vleft auto-fadein">
       <q>
-        This is an example of quote text.
+        Talk is cheap...show me the code!
       </q>
       <div class="author">
-        Name<br>
-        Company
+      Linus
       </div>
+    </article>
+  </slide>
+   <slide>
+    <hgroup>
+      <h2>Benefits: Code Reduction - Before</h2>
+    </hgroup>
+     <pre class="prettyprint" data-lang="java" style="font-size:13px;">
+        mService.requestUsers(new Callback&lt;GithubUsersResponse&gt;() {
+            public void success(final GithubUsersResponse githubUsersResponse, final Response response) {
+                final List&lt;GithubUserDetail&gt; githubUserDetails = new ArrayList&lt;GithubUserDetail&gt;();
+                for (GithubUserDetail githubUserDetail : githubUsersResponse) {
+                    mService.requestUserDetails(githubUserDetail.mLogin, new Callback&lt;GithubUserDetail&gt;() {
+                        public void success(GithubUserDetail githubUserDetail, Response response) {
+                            githubUserDetails.add(githubUserDetail);
+                            if (githubUserDetails.size() == githubUsersResponse.mGithubUsers.size()) {
+                                mBus.post(new UserDetailsLoadedCompleteEvent(githubUserDetails));
+                            }
+                        }
+                        public void failure(RetrofitError error) {
+                            Log.e(TAG, "Request User Detail Failed!!!!", error);
+                        }
+                    });
+                }
+            }
+            public void failure(RetrofitError error) {Log.e(TAG, "Request User Failed!!!!", error);}
+        });
+     </pre>
+  </slide>
+   <slide>
+    <hgroup>
+      <h2>Benefits: Code Reduction - After</h2>
+    </hgroup>
+     <pre class="prettyprint" data-lang="java" >
+        mService.rxRequestUsers()
+        .concatMap(Observable::from)
+        .concatMap((GithubUser githubUser) -> 
+          mService.rxRequestUserDetails(githubUser.mLogin)
+        )
+        .toList()
+        .subscribeOn(newThread())
+        .observeOn(mainThread())
+        .subscribe( System.out::println ); //prints github user details
+    }
+     </pre>
+     <article class="smaller">
+     <p>"My code lost 200 pounds on rxJava!"</p>
+   </article>
+  </slide>
+   <slide hidden>
+    <hgroup>
+      <h2>2 Basic Roles</h2>
+    </hgroup>
+    <article>
+      <ul>
+      <li><h2.blue>Observable</h2>
+      <ul>
+        <li>Emits a series of <b>Events</b> and <b>Data</b></li>
+      </ul>
+      <br />
+    </li>
+    <li>
+      <h2>Observer</h2>
+      <ul>
+        <li><b>Receives</b> Events and Data from Observable</li>
+      </ul>
+    </li>
+    </ul>
+    </article>
+  </slide>
+
+ <slide>
+    <hgroup>
+       <h2>Two Basic Roles</h2>
+    </hgroup>
+    <article>
+      <p><b>Observable</b> emits a series of <b>Events</b> and <b>Data</b></p>
+      <pre class="prettyprint" data-lang="java">
+//create a pipeline of strings
+Observable&lt;Integer> rspObservable = Observable.just</b>("rock", "scissors", "paper");
+      </pre>
+      <p><b>Observer</b> receives Events and Data from Observable</p>
+      <pre class="prettyprint" data-lang="java">
+Observable&lt;Integer> rspObservable = Observable.just(1, 2, 3);
+numberObservable.subscribe(<b>new Action1<String>() {
+            @Override
+            public void call(String s) {
+                System.out.println(s); //prints "rock", "scissors", "paper"
+            }
+        }</b>);
+      </pre>
+    </article>
+  </slide>
+
+   <slide>
+    <hgroup>
+       <h2>Two Basic Roles</h2>
+    </hgroup>
+    <article>
+      <p><b>Observable</b> emits a series of <b>Events</b> and <b>Data</b></p>
+      <pre class="prettyprint" data-lang="java">
+//create a pipeline of strings
+Observable<Integer> rspObservable = Observable.just("rock", "scissors", "paper");
+      </pre>
+      <p><b>Observer</b> receives Events and Data from Observable</p>
+      <pre class="prettyprint" data-lang="java">
+Observable<Integer> rspObservable = Observable.just(1, 2, 3);
+//same thing! Use java 8 lambdas and method references
+numberObservable.subscribe(<b>System.out::println</b>);
+      </pre>
     </article>
   </slide>
 
   <slide>
     <hgroup>
-      <h2>Slide with Iframe</h2>
+       <h2>Picture of Observable</h2>
+    </hgroup>
+    <pre class="prettyprint" data-lang="java">
+//create a pipeline of strings
+Observable<Integer> rspObservable = Observable.just("rock", "scissors", "paper");
+      </pre>
+      <article>
+    <img src="images/picture_of_observable.png"  alt="Description" title="Description">
+    </article>
+    <br />
+    <br />
+  <article>
+    <p>None of this happens until the .subscribe() is called on the Observable.</p>
+  </article>
+</slide>
+  <slide>
+    <hgroup>
+       <h2>Creating Observables</h2>
+    </hgroup>
+     <article>
+      <p><b>.just()</b> - convert an object or several objects into an Observable that emits that object or those objects</p>
+    <pre class="prettyprint" data-lang="java">
+Observable.<b>just</b>("rock", "scissors", "paper")
+.subscribe(s -> System.out.println("-->" + s));
+//--> "rock"
+//--> "scissors"
+//--> "paper"
+      </pre>
+    </article>
+    <article>
+      <p><b>.from()</b> - convert an Iterable or an Array into an Observable</p>
+    <pre class="prettyprint" data-lang="java">
+List&lt;String> stooges = Arrays.asList("Larry", "Moe", "Curly");
+Observable.<b>from</b>(stooges)
+.subscribe(s -> System.out.println("-->" + s));
+//--> "Larry"
+//--> "Moe"
+//--> "Curly"
+      </pre>
+    </article>
+</slide>
+
+ <slide>
+    <hgroup>
+       <h2>Observable Events</h2>
     </hgroup>
     <article>
-      <iframe data-src="http://www.google.com/doodle4google/resources/history.html"></iframe>
+      <p><b>onNext()</b> called every time a new item is emitted from an Observable</p>
+      <p><b>onComplete()</b> called when all items have been emitted from the Observable
+      </p>
+      <p><b>onError()</b> called when Observable experienced an error condition</p>
+    </article>
+  </slide>
+
+ <slide>
+    <hgroup>
+       <h2>Observable Events</h2>
+    </hgroup>
+    <article>
+      <p><b>Subscriber</b> implements what happens in response to these events.</p>
+    </article>
+    <pre class="prettyprint" data-lang="java">
+     Observable.just("Larry", "Moe", "Curly").subscribe(new Subscriber&lt;String&gt;() {
+            @Override
+            public void <b>onNext(String s)</b> {
+              //"Hey, Moe! Hey, Larry! it's" + s + "!"
+            }
+            @Override
+            public void <b>onCompleted()</b> {
+              //all stooges accounted for. Lock doors
+            }
+            @Override
+            public void <b>onError(Throwable e)</b> {
+              //"I'm sorry, Moe, it was an accident!" 
+            }
+        });
+      </pre>
+  </slide>
+
+   <slide>
+    <hgroup>
+       <h2>Altering Streams with Operators</h2>
+    </hgroup>
+    <article>
+      <img src="images/transformation.png" />
     </article>
   </slide>
 
   <slide>
+    <hgroup>
+      <h2>Altering Streams with Operators</h2>
+    </hgroup>
     <article>
-      <iframe data-src="http://www.google.com/doodle4google/resources/history.html"></iframe>
+     <ul>
+      <li><b>Transformation</b>: Map, FlatMap, Scan, Window, GroupBy, Buffer...</li>
+      <li><b>Filtering</b>: Filter, Take, Sample, First, IgnoreElements, Skip...</li>
+      <li><b>Error Handling</b>: Retry, Catch</li>
+      <li><b>Conditional and Boolean Operators</b>: All, Amb, Contains, DefaultIfEmpty, SequenceEqual, SkipUntil, SkipWhile, TakeUntil, and TakeWhile</li>
+     <li><b>Combining Observables</b>: And/Then/When, CombineLatest, Join, Merge, StartWith, Switch, and Zip</li>
+     </ul>
+   </article>
+  </slide>
+
+ <slide>
+    <hgroup>
+      <h2>Altering Streams with Operators</h2>
+    </hgroup>
+    <article>
+      <p></p>
+      <img src="images/map.png" />
     </article>
   </slide>
 
-  <slide class="thank-you-slide segue nobackground">
-    <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside>
-    <article class="flexbox vleft auto-fadein">
-      <h2>&lt;Thank You!&gt;</h2>
-      <p>Important contact information goes here.</p>
-    </article>
-    <p class="auto-fadein" data-config-contact>
-      <!-- populated from slide_config.json -->
-    </p>
+ <slide>
+    <hgroup>
+      <h2>Altering Streams with Operators</h2>
+    </hgroup>
+    <article>
+     <p><b>map()</b> transforms the items emitted from an Observable by applying a function to each, changing the content.</p>
+   <pre class="prettyprint" data-lang="java">
+Observable.just("Larry", "Moe", "Curly").map(new Func1&lt;String, Integer&gt;() {
+      @Override
+      public Integer call(String s) {
+          return s.length();
+      }
+  }).subscribe(integer -> {
+      System.out.println(integer);
+  });
+                              //prints 5
+                              // 3
+                              // 5
+<b>//identical: .map(String::length).subscribe(System.out::println);</b>
+   </pre>
+ </article>
+  </slide>
+  <slide>
+    <hgroup>
+      <h2>Transforming Streams with Operators</h2>
+    </hgroup>
+    <article>
+     <p><b>flatMap()</b> Map a function over a collection and flatten the result by one-level. 
+</p>
+<pre class="prettyprint" data-lang="java">
+  List&lt;String&gt; primaryColors = Arrays.asList("Red", "Yellow", "Blue"); 
+  List&lt;String&gt; secondaryColors = Arrays.asList("Purple", "Orange", "Green");
+  Observable&lt;List&lt;String&gt;&gt; colorLists = Observable.just(primaryColors, secondaryColors);
+
+  colorLists
+  .<b>flatMap</b>(Observable::from)
+  .subscribe(System.out::println);
+  //prints Red, Yellow, Blue, Purple, Orange, Green
+</pre>
+ </article>
   </slide>
 
-  <slide class="logoslide dark nobackground">
+<slide>
+    <hgroup>
+      <h2>Transforming Streams with Operators</h2>
+    </hgroup>
+    <article>
+     <p><b>flatMap()</b> vs <b>map()</b>
+</p>
+<pre class="prettyprint" data-lang="java">
+  List&lt;String&gt; primaryColors = Arrays.asList("Red", "Yellow", "Blue"); 
+  List&lt;String&gt; secondaryColors = Arrays.asList("Purple", "Orange", "Green");
+  Observable&lt;List&lt;String&gt;&gt; colorLists = Observable.just(primaryColors, secondaryColors);
+
+  colorLists
+  .<b>flatMap</b>(Observable::from)
+  .subscribe(System.out::println);
+  //prints Red, Yellow, Blue, Purple, Orange, Green
+
+  colorLists
+  .<b>map</b>(Observable::from)
+  .subscribe(System.out::println);
+  //prints rx.Observable@64c64813, rx.Observable@3ecf72fd
+</pre>
+<a href="https://github.com/mutexkid/rxjava-koans/blob/master/src/test/java/lessonB_MapAndFlatMapAndBasicOperators.java">
+    https://github.com/mutexkid/rxjava-koans</a> to learn more!
+ </article>
+  </slide>
+
+  
+<slide>
+    <hgroup>
+      <h2>Merging Streams</h2>
+    </hgroup>
+    <article>
+     <p><b>merge()</b>:</b>
+</p>
+<pre class="prettyprint" data-lang="java">
+  Observable&lt;ApiData&gt; requestOne = makeRequest();
+  Observable&lt;ApiData&gt; requestTwo = makeRequest();
+  //combine the data from the two requests in the order they are received
+  Observable&lt;ApiData&gt; merged = Observable.<b>merge</b>(requestOne, requestTwo);
+  //to preserve order, check out concat()
+</pre>
+</article>
+  </slide>
+
+<slide>
+    <hgroup>
+      <h2>Filtering Streams</h2>
+    </hgroup>
+    <article>
+     <p><b>filter()</b>: filters an Observable by only allowing items through that pass a test you specify.</b>
+</p>
+<pre class="prettyprint" data-lang="java">
+  Observable&lt;ApiData&gt; requestOne = makeRequest();
+  Observable&lt;ApiData&gt; requestTwo = makeRequest();
+  Observable&lt;ApiData&gt; merged = Observable.merge(requestOne, requestTwo);
+
+  Observable&lt;ApiData&gt; dataWithProfile = merged.filter(apiData -> {
+      return apiData.hasUserProfile(); //if theres a profile, return true
+  });
+
+</pre>
+</article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Error Handling</h2>
+    </hgroup>
+    <article>
+     <p><b>retry()</b>: if a source Observable emits an error, resubscribe to it in the hopes that it will complete without error</b>
+</p>
+<pre class="prettyprint" data-lang="java">
+  List&lt;String&gt; greatPresidents = null;
+      Observable.just(greatPresidents).map(new Func1&lt;List&lt;String&gt;, List&lt;String&gt;&gt;() {
+           @Override 
+          public List&lt;String&gt; call(List&lt;String&gt; strings) { 
+              System.out.println("Try to put something in the null array!"); 
+              strings.add("George Bush"); 
+              return strings; 
+            }
+      }).<b>retry()</b>.doOnError(new Action1&lt;Throwable&gt;() {
+          @Override
+          public void call(Throwable throwable) {
+              System.out.println("Something real bad happened! " + throwable);
+          }
+      }).subscribe();
+  }
+</pre>
+</article>
+  </slide>
+
+   <slide>
+    <hgroup>
+      <h2>Error Handling</h2>
+    </hgroup>
+    <article>
+     <p><b>retry()</b>: if a source Observable emits an error, resubscribe to it in the hopes that it will complete without error</b>
+</p>
+<pre class="prettyprint" data-lang="java">
+   public &lt;T&gt; Observable&lt;T&gt; withTokenRefresh(Observable&lt;T&gt; observable) {
+        return observable.<b>retry</b>((integer, throwable) -> {
+            if (isUnauthorized(throwable) &amp;&amp; integer &lt; MAX_TOKEN_REFRESH_ATTEMPTS) {
+                requestNewAccessToken();
+                return true;
+            }
+            return false;
+        });
+    }
+    Observable&lt;ApiData&gt; apiData = withRefresh(makeRequest());
+    //..composing functions to build more complex behaviour!
+</pre>
+</article>
+  </slide>
+
+ <slide>
+    <hgroup>
+      <h2>Managing Threads</h2>
+      <h3>the Scheduler is responsible for defining how units of work are processed.</h3>
+    </hgroup>
+    </slide>
+    <slide>
+    <hgroup>
+      <h2>Managing Threads</h2>
+      <h3>the Scheduler is responsible for defining how units of work are processed.</h3>
+    </hgroup>
+      <pre class="prettyprint" data-lang="java">
+        mService.rxRequestUsers()
+        .concatMap(Observable::from)
+        .concatMap((GithubUser githubUser) -> 
+          mService.rxRequestUserDetails(githubUser.mLogin)
+        )
+        .toList()
+        //does requests on background thread
+        <b>.subscribeOn(Schedulers.newThread())  
+        .observeOn(AndroidSchedulers.mainThread())</b> 
+        .subscribe( System.out::println ); //prints details on Main Thread
+      </pre>
+    </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Managing Threads</h2>
+    </hgroup>
+    <article>
+      <table>
+        <tr>
+          <th>Scheduler</th><th>Purpose</th>
+        </tr>
+        <tr>
+          <td>Schedulers.computation()</td><td>meant for computational work such as event-loops and callback processing;</td>
+        </tr>
+        <tr>
+          <td>Schedulers.immediate()</td><td>schedules work to begin immediately in the current thread</td>
+        </tr>
+        <tr>
+          <td>Schedulers.io()</td><td>meant for I/O-bound work such as asynchronous performance of blocking I/O</td>
+        </tr>
+       <tr>
+          <td>Schedulers.newThread()</td><td>creates a new thread for each unit of work</td>
+        </tr>
+        <tr>
+          <td>AndroidSchedulers.mainThread()</td><td>execute actions on the Android UI thread.</td>
+        </tr>
+      </table>
+    </article>
+  </slide>
+
+<slide>
+    <hgroup>
+      <h2>How do i use it on Android??</h2>
+    </hgroup>
+    <article>
+      <img src="images/c3p0.jpg"><br />
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>How do i use it on Android??</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>Retrolambda + Gradle Retrolambda backports java 8 to java 6</li>
+        <li>rxandroid lib contains many helper classes for android specific concerns</li>
+         <li>Retrofit (an "awesome" REST library) speaks Rx!</li>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>Retrolambda setup</h2>
+    </hgroup>
+    <article>
+      <h3>build.gradle:</h3>
+      <pre class="prettyprint" data-lang="javascript" >
+  buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'me.tatarka:gradle-retrolambda:2.5.0'
+    }
+}
+</pre>
+    </article>
+  </slide>
+
+  <slide>
+    <hgroup>
+      <h2>RxAndroid</h2>
+    </hgroup>
+    <article>
+      <h3>app/build.gradle:</h3>
+      <pre class="prettyprint" data-lang="javascript" >
+  dependencies {
+    compile 'io.reactivex:rxandroid-framework:0.24.0'
+  }
+</pre>
+    </article>
+  </slide>
+   <slide>
+    <hgroup>
+      <h2>RxAndroid</h2>
+    </hgroup>
+    <article>
+      <h3>contains lots of goodies for making rx play nice with android</h3>
+      <br /> 
+      <ul>
+        <li><b>lifecycle binding</b> - bindActivityLifecycle & bindActivity</li>
+        <br />
+        <li><b>android-specific Scheduler</b> - AndroidSchedulers.mainThread()</li>
+        <br />
+        <li><b>subscribe to widget events</b> - WidgetObservable.text(myEditText) </li>
+      </ul>
+    </article>
+  </slide>
+  </slide>
+
+   <slide>
+    <hgroup>
+      <h2>RxAndroid - quick example</h2>
+    </hgroup>
+    <article>
+      <h3>enable a login button when an api endpoint is validated with the server</h3>
+
+<pre class="prettyprint" data-lang="java">
+  
+  //bind text changes from edit text to webservice
+  Observable&lt;String&gt; validatedEndpointObservable 
+  = bindObservable(WidgetObservable.text(mLoginEndpointET)
+  .map(onTextChangeEvent -> onTextChangeEvent.text().toString())
+  .flatMap(s -> retroFitService::validateUrl(s)))
+  //has a string in the response? valid!
+  .map(!TextUtils::isEmpty);
+
+  //update the ui as events are received (main thread)
+  validatedEndpointObservable.subscribe(isValid -> {
+    mLoginButton.setEnabled(isValid);
+  }, throwable -> displayErrorMessage(throwable));
+</pre>
+    </article>
+  </slide>
+
+   <slide>
+    <hgroup>
+      <h2>RxAndroid - quick example</h2>
+    </hgroup>
+    <article>
+      <h3>making the Observable aware of the Activity Lifecycle:</h3>
+<pre class="prettyprint" data-lang="java">
+public abstract class BaseActivity extends <b>RxActivity</b> {
+   //bindActivityLifecycle: Auto unsubscribe the observable 
+   //when the activity is destroyed
+   public &lt;T&gt; Observable&lt;T&gt; bindObservable(Observable&lt;T&gt; source) {
+    return <b>LifecycleObservable.bindActivityLifecycle</b>(lifecycle(),
+                          //bindActivity = observe on uiThread, and subscribe 
+                          //when activity is ready
+            <b>AppObservable.bindActivity</b>(this, source));
+   }
+}
+</pre>
+    </article>
+  </slide>
+
+  <slide class="dark nobackground">
     <article class="flexbox vcenter">
-      <span><img src="images/google_developers_logo_white.png"></span>
+      <img src="images/rxlogo.png"><br />
+      <a href="https://github.com/mutexkid/rxjava-koans/blob/master/src/test/java/lessonB_MapAndFlatMapAndBasicOperators.java">
+        <br />
+    https://github.com/mutexkid/rxjava-koans</a>
     </article>
   </slide>
-
   <slide class="backdrop"></slide>
-
 </slides>
-
-<script>
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
-_gaq.push(['_trackPageview']);
-
-(function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-</script>
 
 <!--[if IE]>
   <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
